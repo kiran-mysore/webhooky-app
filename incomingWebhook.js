@@ -13,6 +13,13 @@ const link = process.env.LINK // We can use any link. In this case a github repo
  Incoming webhooks are triggered by external sources : an example would be if a new user signs up to your   service or if a product is sold. The goal of the incoming webhook is to provide easy-to-reach and comprehensible information for your team.
  * */
 
+  // Slack settings in “https://my.slack.com/apps/build/custom-integration”
+  /* Settings : 1. Select the channel
+                2. Get the webhook URL
+                3. URL(s)
+                4. Cutomize name
+                5. Icon or emoji
+  */
 /*
 request
     .post(WEBHOOK_URL)
@@ -45,3 +52,4 @@ request
             console.log(res)
         }
     })
+
